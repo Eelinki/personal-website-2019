@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header {
+	background: rgb(2,0,36);
+	background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(180,74,255,1) 100%);
+	color: #fff;
+	padding: 2.5% 4%;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+ul.someIcons {
+	padding: 0;
+	flex-wrap: wrap;
+	display: flex;
+	padding: 5px;
+}
+
+ul.someIcons li {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px;
+}
+
+ul.someIcons li img {
+	width: 32px;
+}
+
+ul.someIcons li a:hover {
+	margin-top: -2px;
+}
+
+ul.someIcons li a:active {
+	margin-top: 0px;
+}
+
+ul.navigation {
+	padding: 2.5% 2% 0 4%;
+	list-style: none;
+}
+
+ul.navigation li {
+	padding-bottom: 1.5em;
+}
+
+ul.navigation a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+ul.navigation a:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+.container {
+	padding: 2.5% 4%;
+}
+
+pre {
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: pre-wrap;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 40em) {
+	.flex-container {
+		flex-direction: column;
+	}
+
+	ul.navigation {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		padding-top: 1.5em;
+		margin: 0;
+		background: #020024;
+	}
+
+	ul.navigation a:hover {
+		color: #fff;
+	}
+}
