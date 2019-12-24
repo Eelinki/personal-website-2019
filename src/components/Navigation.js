@@ -15,8 +15,8 @@ function Navigation() {
         </Link>
       </li>
       <li>
-        <Link to="/random">
-          Random
+        <Link to="/csgo-settings">
+          CS: GO
         </Link>
       </li>
     </ul>
